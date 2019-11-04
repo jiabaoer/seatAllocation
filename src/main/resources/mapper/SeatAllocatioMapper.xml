@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jiabaor.dao.SeatAllocatioMapper">
+	<resultMap type="com.jiabaor.pojo.User"
+		id="WithDeptResultMap">
+		<id property="idCard" column="idCard" />
+		<result property="name" column="name" />
+		<result property="sex" column="sex" />
+		<result property="vip" column="vip" />
+		<result property="baby" column="baby" />
+		<result property="disability" column="disability" />
+		<result property="preference" column="preference" />
+		<result property="userGroup" column="userGroup" />
+		<result property="together" column="together" />
+		<association property="seatallocation"
+			javaType="com.jiabaor.pojo.Seatallocation">
+			<result property="userIdCard" column="userIdCard" />
+			<result property="seatSerialNumber" column="seatSerialNumber" />
+			<result property="createTime" column="createTime" />
+		</association>
+	</resultMap>
+	<select id="selectUsableSeat" parameterType="String"
+		resultType="int">
+		select count(*) from
+		seat
+		where planeType=#{planeType} and
+		usable=1
+	</select>
+	<select id="selectUserList" resultMap="WithDeptResultMap">
+		select * from user u
+		LEFT
+		JOIN seatallocation d on u.idCard=d.userIdCard order by u.vip
+		DESC,u.baby
+		DESC,u.disability DESC,u.preference DESC,u.userGroup
+		DESC,d.createTime
+		asc
+	</select>
+
+	<select id="selectSeatList" resultType="com.jiabaor.pojo.Seat"
+		parameterType="String">
+		select * from seat where planeType=#{planeType} ORDER BY
+		MID(serialNumber,2,2),MID(serialNumber,1,1)
+	</select>
+	<update id="insertSeatAllocation" parameterType="String">
+		update
+		seatallocation
+		set
+		seatSerialNumber=#{seat} where userIdCard=#{idCard}
+	</update>
+	<select id="selectUserListByIdCast" parameterType="String"
+		resultMap="WithDeptResultMap">
+		select
+		*
+		from user u LEFT JOIN seatallocation d on
+		u.idCard=d.userIdCard
+		WHERE
+		idCard=#{idCard}
+	</select>
+	<select id="selectUserListAndSeatListByUsergroup"
+		parameterType="String" resultMap="WithDeptResultMap">
+		select
+		user.*,seatallocation.createTime,seatallocation.seatSerialNumber
+		from
+		`user`,seatallocation WHERE
+		user.userGroup=#{userGroup} and
+		`user`.idCard=seatallocation.userIdCard
+	</select>
+</mapper>

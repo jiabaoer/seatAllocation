@@ -1,0 +1,1256 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+/*描述样式*/
+body, html {
+	width: 100%;
+	height: 100%;
+	padding-right: 0px !important;
+	margin: 0;
+}
+
+*.modal-open {
+	overflow-y: scroll;
+	padding-right: 0 !important;
+}
+
+#app {
+	height: 160%;
+	background-color: #ccc;
+}
+
+.app {
+	background: url('../image/home.jpg');
+	background-size: 100% 100%;
+}
+
+#reset {
+	margin-left: 40px;
+}
+
+#list-group-item {
+	margin-bottom: 5px;
+	margin-left: 10px;
+}
+
+#addForm {
+	border-right: 1px solid #ccc;
+}
+
+ul {
+	list-style: none;
+	margin-bottom: 0;
+}
+
+.img {
+	float: right;
+	width: 900px;
+	height: 250px;
+}
+
+.img img {
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+}
+
+#img {
+	margin: auto;
+	width: 900px;
+	height: 300px;
+}
+
+#img img {
+	width: 100%;
+	height: 100%;
+}
+
+.a {
+	width: 1140px;
+	height: 256px;
+	margin: auto;
+	background-color: rgb(169, 202, 222);
+	/*transform:rotate(90deg);*/
+	border: 3px solid rgb(155, 155, 155);
+	border-radius: 14px;
+	margin-bottom: 30px;
+	/*overflow: hidden;*/
+}
+
+.a .left {
+	position: relative;
+	float: left;
+	width: 155px;
+	height: 100%;
+}
+
+.a .left .the-letter {
+	width: 20px;
+	height: 250px;
+	margin-left: 114px;
+}
+
+.a .left .the-letter>span {
+	float: left;
+	display: block;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.a .left .the-letter>span:nth-child(3) {
+	margin-top: 8px;
+}
+
+.a .left .the-letter>span:nth-child(7) {
+	margin-top: 21px;
+}
+
+.a .midden {
+	float: left;
+	width: 290px;
+	height: 250px;
+}
+
+.a .midden .the-Corridor {
+	height: 20px;
+	font-size: 0;
+}
+
+.a .midden .the-Corridor>span {
+	display: inline-block;
+	/* float:left; */
+	font-size: 17px;
+	font-weight: bold;
+	height: 20px;
+	width: 10%;
+	color: rgb(50, 94, 129);
+}
+
+.a .li1 {
+	height: 19%;
+	background-color: rgb(169, 203, 223);
+}
+
+.a .midden>.li1>li, .a .midden>.li2>li, .a .midden>.li3>li {
+	position: relative;
+	float: left;
+	width: 19px;
+	height: 18px;
+	color: rgb(3, 169, 250);
+	font-size: 19px;
+	margin-right: 10px;
+	border-radius: 6px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.a .li2 {
+	height: 45%;
+	background-color: rgb(169, 203, 223);
+}
+
+.a .midden>.li1>li {
+	margin-top: 4px;
+}
+
+.a .midden>.li2>li {
+	margin-top: 7px;
+}
+
+.a .midden>.li3>li {
+	margin-top: 4px;
+}
+
+.a .li3 {
+	width: 265px;
+	height: 19%;
+	background-color: rgb(169, 203, 223);
+}
+
+.a .export {
+	position: relative;
+	float: left;
+	width: 100px;
+	height: 100%;
+	background-color: rgb(169, 203, 223);
+}
+
+.a .right {
+	float: left;
+	width: 470px;
+	height: 250px;
+	background-color: rgb(169, 203, 223);
+}
+
+.a .right .the-Corridor2 {
+	line-height: 20px;
+	font-size: 0;
+}
+
+.a .right .the-Corridor2>span {
+	display: block;
+	float: left;
+	font-size: 17px;
+	font-weight: bold;
+	height: 20px;
+	width: 6.25%;
+	color: rgb(50, 94, 129);
+}
+
+.a .li4 {
+	width: 450px;
+	height: 19%;
+	background-color: rgb(169, 203, 223);
+}
+
+.a .right>.li4>li, .a .right>.li6>li {
+	position: relative;
+	float: left;
+	width: 17px;
+	height: 17px;
+	color: rgb(3, 169, 250);
+	font-size: 19px;
+	margin-top: 5px;
+	margin-right: 12px;
+	border-radius: 6px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.a .right .right-r {
+	width: 480px;
+	height: 112px;
+}
+
+.a .right .right-r .li5 {
+	float: left;
+	width: 325px;
+	height: 112px;
+	background-color: rgb(169, 203, 223);
+}
+
+.a .right .right-r>.li5>li {
+	position: relative;
+	float: left;
+	width: 17px;
+	height: 17px;
+	color: rgb(3, 169, 250);
+	font-size: 19px;
+	margin-top: 9px;
+	margin-right: 12px;
+	border-radius: 6px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.a .li7 {
+	float: left;
+	width: 140px;
+	height: 112px;
+	background-color: rgb(169, 203, 223);
+}
+
+.a .right .right-r .li7 li {
+	position: relative;
+	float: left;
+	width: 17px;
+	height: 17px;
+	color: rgb(3, 169, 250);
+	font-size: 19px;
+	margin-right: 11px;
+	margin-top: 9px;
+	border-radius: 6px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.a .li6 {
+	width: 451px;
+	height: 20%;
+	background-color: rgb(169, 203, 223);
+}
+
+.a .end {
+	position: relative;
+	float: left;
+	width: 61px;
+	height: 250px;
+	background-color: rgb(169, 203, 223);
+	border-radius: 0 100px 100px 0;
+}
+
+.a .export>i {
+	position: absolute;
+}
+
+.a .export #yinger1, .a .export #yinger2 {
+	right: 0;
+	font-weight: bold;
+	font-size: 20px;
+	color: #ff4302;
+}
+
+.a .export #yinger1 {
+	top: 96px;
+}
+
+.a .export #yinger2 {
+	top: 120px;
+}
+
+.a .export #cesuo1 {
+	left: 0;
+	top: 1px;
+	font-size: 31px;
+	transform: rotate(-90deg);
+	height: 44px;
+	width: 34px;
+	background-color: #717071;
+	color: #fff;
+}
+
+.a .export #cesuo2 {
+	bottom: 4px;
+	left: -14px;
+	font-size: 31px;
+	transform: rotate(-90deg);
+	height: 44px;
+	width: 34px;
+	background-color: #717071;
+	color: #fff;
+}
+
+.a .export #dengjikou {
+	top: -19px;
+	right: 22px;
+	margin: auto;
+	font-size: 30px;
+	color: red;
+}
+
+.a .export #dengjikou2 {
+	bottom: -19px;
+	right: 22px;
+	margin: auto;
+	font-size: 30px;
+	transform: rotate(180deg);
+	color: red;
+}
+
+.a .export .b {
+	position: absolute;
+	width: 50px;
+	height: 59px;
+	transform: rotate(-90deg);
+	bottom: -5px;
+	left: -28px;
+}
+
+.a .export .c {
+	position: absolute;
+	bottom: 0;
+	left: -5px;
+	top: 0;
+	margin: auto;
+	width: 50px;
+	height: 130px;
+	background-color: rgb(151, 151, 151);
+}
+
+.a .end>i {
+	position: absolute;
+}
+
+.a .end>#cesuo3 {
+	left: -33px;
+	top: 0;
+	font-size: 31px;
+	transform: rotate(-90deg);
+	height: 44px;
+	width: 34px;
+	background-color: #717071;
+	color: #fff;
+}
+
+.a .end>#cesuo4 {
+	bottom: 4px;
+	left: -33px;
+	font-size: 31px;
+	transform: rotate(-90deg);
+	height: 44px;
+	width: 34px;
+	background-color: #717071;
+	color: #fff;
+}
+
+.a .end>#dengjikou3 {
+	top: -21px;
+	left: 5px;
+	margin: auto;
+	font-size: 30px;
+	color: red;
+}
+
+.a .end>#dengjikou4 {
+	bottom: -21px;
+	left: 5px;
+	margin: auto;
+	font-size: 30px;
+	transform: rotate(180deg);
+	color: red;
+}
+
+.a .end .c {
+	position: absolute;
+	bottom: 0;
+	left: -8px;
+	top: 0;
+	margin: auto;
+	width: 50px;
+	height: 80px;
+	background-color: rgb(151, 151, 151);
+}
+
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+/*弄i是*/
+/* ���ز���ʽ */
+.shows {
+	position: absolute;
+	width: 276px;
+	padding: 20px 20px;
+	background-color: black;
+	border-radius: 6px;
+	box-shadow: 0 0 50px black;
+	opacity: 0;
+	z-index: 999;
+	transition: 0.1s;
+}
+
+.shows span {
+	color: white;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+li {
+	transform: rotate(-90deg);
+}
+
+/*修改bt样式*/
+.alert {
+	padding: 6px;
+}
+
+.panel-body {
+	max-height: 260px;
+	overflow: auto;
+}
+
+.information {
+	float: left;
+	width: 220px;
+	height: 250px;
+	background-color: #e7e7e7;
+	border-radius: 7px;
+}
+
+.information>li {
+	display: block;
+	transform: rotate(0deg);
+	margin-bottom: -2px;
+}
+
+.information>li>span {
+	margin-left: 10px;
+}
+
+.information>li>i {
+	font-size: 19px;
+	margin: 10px;
+}
+
+#app {
+	position: relative;
+}
+
+label {
+	font-weight: none;
+	cursor: pointer;
+}
+
+.nav>li, .dropdown-menu>li {
+	transform: rotate(0deg);
+}
+
+#moreAllocation .form-horizontal {
+	width: 50%;
+}
+
+#oneAllocation .modal-dialog {
+	width: 500px;
+}
+
+.list-group-item {
+	transform: rotate(0deg);
+}
+
+#usergroups, #usergroups1 {
+	overflow: auto;
+	max-height: 300px;
+}
+
+/*第二个航班图的样式*/
+.a .midden1 {
+	float: left;
+	width: 403px;
+	height: 250px;
+}
+
+.a .midden1>.li1>li {
+	margin-top: 0;
+}
+
+.a .midden1>#li1 {
+	width: 375px;
+	margin-left: 23px;
+}
+
+.a .midden1>#li2 {
+	width: 375px;
+	height: 105px;
+	margin-left: 23px;
+}
+
+.a .midden1>#li3 {
+	width: 403px;
+}
+
+.a .midden1>.li1>li, .a .midden1>.li2>li, .a .midden1>.li3>li {
+	position: relative;
+	float: left;
+	color: rgb(3, 169, 250);
+	font-size: 18px;
+	margin-right: 4px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.a .midden1 .the-Corridor3 {
+	margin-top: 3px;
+	height: 20px;
+	font-size: 0;
+	background-color: rgb(169, 203, 223);
+}
+
+.a .midden1 .the-Corridor3>span {
+	display: inline-block;
+	/* float:left; */
+	font-size: 17px;
+	font-weight: bold;
+	height: 20px;
+	width: 5.52%;
+	color: rgb(50, 94, 129);
+}
+
+.a .export1 {
+	position: relative;
+	float: left;
+	width: 100px;
+	height: 100%;
+	background-color: rgb(169, 203, 223);
+}
+
+.a .right1 {
+	float: left;
+	width: 350px;
+	height: 250px;
+	background-color: rgb(169, 203, 223);
+}
+
+.a .right1>.li4>li, .a .right1>.li6>li {
+	position: relative;
+	float: left;
+	height: 17px;
+	color: rgb(3, 169, 250);
+	font-size: 18px;
+	margin-top: 5px;
+	margin-right: 6px;
+	border-radius: 6px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.a .right1 .the-Corridor4 {
+	margin-top: 3px;
+	line-height: 20px;
+	font-size: 0;
+}
+
+.a .right1 .the-Corridor4>span {
+	display: block;
+	float: left;
+	font-size: 17px;
+	font-weight: bold;
+	height: 20px;
+	width: 7%;
+	color: rgb(50, 94, 129);
+}
+
+.a .right1 .right-r {
+	width: 350px;
+	height: 105px;
+}
+
+.a .right1 .right-r>.li5 {
+	float: left;
+	width: 246px;
+}
+
+.a .right1 .right-r>.li5>li {
+	position: relative;
+	float: left;
+	width: 17px;
+	height: 17px;
+	color: rgb(3, 169, 250);
+	font-size: 18px;
+	margin-top: 8px;
+	margin-right: 7px;
+	border-radius: 6px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.a .right1 .right-r>.li7 {
+	float: left;
+	width: 93px;
+	height: 105px;
+	background-color: rgb(169, 203, 223);
+}
+
+.a .right1 .right-r .li7 li {
+	position: relative;
+	float: left;
+	width: 17px;
+	height: 17px;
+	color: rgb(3, 169, 250);
+	font-size: 18px;
+	margin-right: 6px;
+	margin-top: 8px;
+	border-radius: 6px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.a .right1>.li4 {
+	width: 314px;
+	height: 19%;
+	background-color: rgb(169, 203, 223);
+}
+
+.a .right1>.li6 {
+	width: 314px;
+	height: 20%;
+	background-color: rgb(169, 203, 223);
+}
+
+.a .export1>i {
+	position: absolute;
+}
+
+.a .export1 #yinger3, .a .export1 #yinger4 {
+	right: 0;
+	font-weight: bold;
+	font-size: 20px;
+	color: #ff4302;
+}
+
+.a .export1 #yinger3 {
+	top: 97px;
+}
+
+.a .export1 #yinger4 {
+	top: 122px;
+}
+
+.a .export1 #cesuo5 {
+	left: 0;
+	top: 2px;
+	font-size: 31px;
+	transform: rotate(-90deg);
+	height: 44px;
+	width: 34px;
+	background-color: #717071;
+	color: #fff;
+}
+
+.a .export1 #cesuo6 {
+	bottom: 3px;
+	left: -4px;
+	font-size: 31px;
+	transform: rotate(-90deg);
+	height: 44px;
+	width: 34px;
+	background-color: #717071;
+	color: #fff;
+}
+
+.a .export1 #cesuos1 {
+	left: -4px;
+	top: 74px;
+	font-size: 31px;
+	transform: rotate(-90deg);
+	height: 44px;
+	width: 44px;
+	background-color: #717071;
+	color: #fff;
+}
+
+.a .export1 #cesuos2 {
+	left: -3px;
+	top: 116px;
+	font-size: 31px;
+	transform: rotate(-90deg);
+	height: 44px;
+	width: 42px;
+	background-color: #717071;
+	color: #fff;
+}
+
+.a .export1 .dengjikou5 {
+	top: -19px;
+	right: 22px;
+	margin: auto;
+	font-size: 30px;
+	color: red;
+}
+
+.a .export1 .dengjikou6 {
+	bottom: -19px;
+	right: 22px;
+	margin: auto;
+	font-size: 30px;
+	transform: rotate(180deg);
+	color: red;
+}
+
+.a .end>.cesuo7 {
+	bottom: -1px;
+	left: -34px;
+	font-size: 31px;
+	transform: rotate(-90deg);
+	height: 44px;
+	width: 34px;
+	background-color: #717071;
+	color: #fff;
+}
+
+.a .end>.cesuo8 {
+	top: -1px;
+	left: -38px;
+	font-size: 31px;
+	transform: rotate(-90deg);
+	height: 44px;
+	width: 34px;
+	background-color: #717071;
+	color: #fff;
+}
+
+.a .end>#cesuo7 {
+	bottom: 3px;
+	left: -19px;
+	font-size: 31px;
+	transform: rotate(-90deg);
+	height: 44px;
+	width: 34px;
+	background-color: #717071;
+	color: #fff;
+}
+
+.a .end>#cesuo8 {
+	top: 2px;
+	left: -22px;
+	font-size: 31px;
+	transform: rotate(-90deg);
+	height: 44px;
+	width: 34px;
+	background-color: #717071;
+	color: #fff;
+}
+
+.a .end>.dengjikou8 {
+	top: -21px;
+	left: 5px;
+	margin: auto;
+	font-size: 30px;
+	color: red;
+}
+
+.a .end>.dengjikou9 {
+	bottom: -21px;
+	left: 5px;
+	margin: auto;
+	font-size: 30px;
+	transform: rotate(180deg);
+	color: red;
+}
+
+.a .left>i {
+	position: absolute;
+	right: -15px;
+	font-weight: bold;
+	font-size: 20px;
+	color: #ff4302;
+}
+
+.a .left>#yinger11 {
+	top: 23px;
+}
+
+.a .left>#yinger12 {
+	top: 95px;
+}
+
+.a .left>#yinger13 {
+	top: 118px;
+}
+
+.a .left>#yinger14 {
+	top: 224px;
+	right: 1px;
+}
+
+/*航班三样式*/
+.a .midden2 {
+	float: left;
+	width: 150px;
+	height: 250px;
+}
+
+.a .midden2>#li11 {
+	height: 45%;
+	width: 150px;
+}
+
+.a .midden2 .the-Corridor3 {
+	margin-top: 3px;
+	height: 20px;
+	font-size: 0;
+	background-color: rgb(169, 203, 223);
+}
+
+.a .midden2 .the-Corridor3>span {
+	display: inline-block;
+	/* float:left; */
+	font-size: 17px;
+	font-weight: bold;
+	height: 20px;
+	width: 16.52%;
+	color: rgb(50, 94, 129);
+}
+
+.a .midden2>#li11>li, .a .midden2>#li12>li {
+	position: relative;
+	float: left;
+	color: rgb(3, 169, 250);
+	font-size: 20px;
+	margin-right: 4px;
+	margin-top: 5px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.a .midden2>#li12 {
+	height: 45%;
+	width: 150px;
+}
+
+.a .right2>#li13 {
+	width: 290px;
+	height: 45%;
+	background-color: rgb(169, 203, 223);
+}
+
+.a .right2>#li14 {
+	width: 290px;
+	height: 45%;
+	background-color: rgb(169, 203, 223);
+}
+
+.a .right2>#li13>li, .a .right2>#li14>li {
+	position: relative;
+	float: left;
+	color: rgb(3, 169, 250);
+	font-size: 20px;
+	margin-right: 4px;
+	margin-top: 5px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.a .right2 {
+	float: left;
+	width: 312px;
+	height: 250px;
+	background-color: rgb(169, 203, 223);
+}
+
+.a .right2 .the-Corridor4 {
+	margin-top: 3px;
+	line-height: 20px;
+	font-size: 0;
+}
+
+.a .right2 .the-Corridor4>span {
+	display: block;
+	float: left;
+	font-size: 17px;
+	font-weight: bold;
+	height: 20px;
+	width: 7.6%;
+	color: rgb(50, 94, 129);
+}
+
+.a .right3 {
+	float: left;
+	width: 350px;
+	height: 250px;
+	background-color: rgb(169, 203, 223);
+}
+
+.a .right3>#li15 {
+	height: 45%;
+	background-color: rgb(169, 203, 223);
+}
+
+.a .right3 .the-Corridor4>span {
+	display: block;
+	float: left;
+	font-size: 17px;
+	font-weight: bold;
+	height: 20px;
+	width: 6.9%;
+	color: rgb(50, 94, 129);
+}
+
+.a .right3>#li16 {
+	height: 45%;
+	background-color: rgb(169, 203, 223);
+}
+
+.a .right3>#li15>li, .a .right3>#li16>li {
+	position: relative;
+	float: left;
+	color: rgb(3, 169, 250);
+	font-size: 20px;
+	margin-right: 4px;
+	margin-top: 5px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.a .export1 #yinger5, .a .export1 #yinger6 {
+	right: 0;
+	font-weight: bold;
+	font-size: 20px;
+	color: #ff4302;
+}
+
+.a .export1 #yinger5 {
+	top: 37px;
+}
+
+.a .export1 #yinger6 {
+	top: 174px;
+}
+
+.a .export1 #dengjikou10, .a .export1 #dengjikou11, .a .export1 #dengjikou12,
+	.a .export1 #dengjikou13 {
+	margin: auto;
+	font-size: 30px;
+	color: red;
+}
+
+.a .export1 #dengjikou10 {
+	bottom: -19px;
+	left: 5px;
+	transform: rotate(180deg);
+}
+
+.a .export1 #dengjikou11 {
+	top: -19px;
+	left: 5px;
+}
+
+.a .export1 #dengjikou12 {
+	bottom: -19px;
+	left: 380px;
+	transform: rotate(180deg);
+}
+
+.a .export1 #dengjikou13 {
+	top: -19px;
+	left: 380px;
+}
+
+.a .export1 #cesuo10 {
+	bottom: 11px;
+	right: 22px;
+	font-size: 31px;
+	transform: rotate(-90deg);
+	height: 44px;
+	width: 34px;
+	background-color: #717071;
+	color: #fff;
+}
+
+.a .end>#cesuo12 {
+	bottom: 24px;
+	left: -7px;
+	font-size: 31px;
+	transform: rotate(-90deg);
+	height: 44px;
+	width: 34px;
+	background-color: #717071;
+	color: #fff;
+}
+
+.a .end>#cesuo13 {
+	top: 26px;
+	left: -7px;
+	font-size: 31px;
+	transform: rotate(-90deg);
+	height: 44px;
+	width: 34px;
+	background-color: #717071;
+	color: #fff;
+}
+
+.a .end>#dengjikou13 {
+	top: -21px;
+	left: 5px;
+	margin: auto;
+	font-size: 30px;
+	color: red;
+}
+
+.a .end>#dengjikou14 {
+	bottom: -21px;
+	left: 5px;
+	margin: auto;
+	font-size: 30px;
+	color: red;
+	transform: rotate(180deg);
+}
+
+.a .left .the-letter1 {
+	width: 20px;
+	height: 250px;
+	margin-left: 114px;
+}
+
+.a .left .the-letter1>span {
+	float: left;
+	display: block;
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.a .left .the-letter1>span:nth-child(4) {
+	margin-top: 22px;
+}
+
+/*机型4样式*/
+.a .midden3 {
+	float: left;
+	width: 300px;
+	height: 250px;
+}
+
+.a .midden3>#li111 {
+	height: 62px;
+}
+
+.a .midden3>#li222 {
+	height: 75px;
+	width: 268px;
+}
+
+.a .midden3>#li333 {
+	height: 62px;
+}
+
+.a .midden3 .the-Corridor4 {
+	margin-top: 5px;
+	height: 20px;
+	font-size: 0;
+	background-color: rgb(169, 203, 223);
+}
+
+.a .midden3 .the-Corridor4>span {
+	display: inline-block;
+	font-size: 17px;
+	font-weight: bold;
+	height: 20px;
+	width: 11%;
+	color: rgb(50, 94, 129);
+}
+
+.a .midden3>#li111>li, .a .midden3>#li222>li, .a .midden3>#li333>li {
+	position: relative;
+	float: left;
+	color: rgb(3, 169, 250);
+	font-size: 18px;
+	margin-right: 15px;
+	margin-bottom: -6px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.a .right4 {
+	float: left;
+	width: 440px;
+	height: 250px;
+	background-color: rgb(169, 203, 223);
+}
+
+.a .right4>#li444 {
+	height: 62px;
+	width: 410px;
+	margin-top: 2px;
+}
+
+.a .right4>#li555 {
+	height: 78px;
+	width: 405px;
+	margin-left: 31px;
+}
+
+.a .right4>#li666 {
+	height: 62px;
+	width: 410px;
+}
+
+.a .right4>#li444>li, .a .right4>#li666>li, .a .right4>#li555>li {
+	position: relative;
+	float: left;
+	height: 17px;
+	color: rgb(3, 169, 250);
+	font-size: 18px;
+	margin-top: 2px;
+	margin-right: 13px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.a .right4 .the-Corridor4 {
+	margin-top: 2px;
+}
+
+.a .right4 .the-Corridor4>span {
+	display: inline-block;
+	font-size: 17px;
+	font-weight: bold;
+	height: 20px;
+	width: 6.3%;
+	color: rgb(50, 94, 129);
+}
+
+.a .export1 #cesuo9 {
+	bottom: 121px;
+	right: -25px;
+	font-size: 31px;
+	transform: rotate(-90deg);
+	height: 44px;
+	width: 34px;
+	background-color: #717071;
+	color: #fff;
+}
+
+.a .export1 #cesuo14 {
+	bottom: 88px;
+	right: -25px;
+	font-size: 31px;
+	transform: rotate(-90deg);
+	height: 44px;
+	width: 34px;
+	background-color: #717071;
+	color: #fff;
+}
+
+.a .export1 #cesuo11 {
+	bottom: 88px;
+	left: -33px;
+	font-size: 31px;
+	transform: rotate(-90deg);
+	height: 44px;
+	width: 34px;
+	background-color: #717071;
+	color: #fff;
+}
+
+.a .left .the-letter4 {
+	width: 20px;
+	height: 250px;
+	margin-left: 114px;
+}
+
+.a .left .the-letter4>span {
+	float: left;
+	display: block;
+	margin-top: -2px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.a .left .the-letter4>span:nth-child(4) {
+	margin-top: 10px;
+}
+
+.a .left .the-letter4>span:nth-child(8) {
+	margin-top: 10px;
+}
+
+#app-body {
+	margin: auto;
+	width: 1140px;
+	height: 275px;
+}
+
+.dialogs {
+	
+}
+
+.help-block {
+	color: #808080;
+}
+
+.progress {
+	height: 24px;
+	margin-bottom: -3px;
+}
+
+.progress-bar {
+	font-size: 16px;
+	line-height: 24px;
+}
+#bshi .bshi{
+	display: inline-block;
+	width:40px;
+	height:20px;
+	border-radius: 20px;
+	margin-top:10px;
+	margin-right:2px;
+	/*vertical-align: center;*/
+}
+.bshi:nth-child(1){
+	background-color:rgb(92,184,92);
+}
+.bshi:nth-child(2){
+	background-color:rgb(240,178,73);
+}
